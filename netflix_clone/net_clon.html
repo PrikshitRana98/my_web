@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 10px;
+            background-image: url("https://images.unsplash.com/photo-1627873649417-c67f701f1949?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+            color: white;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+        .iconify{
+            width: 12rem;
+            height: 5rem;
+            left: 0;
+            
+        }
+        #language{
+            border:1px solid white ;
+            margin-top: 10px; 
+            margin-right: 20px; 
+            width: 100px; height: 40px; 
+            font-size: 20px; 
+            background-color: black; color: white;
+        }
+        #btn{
+            margin-right: 40px; background-color: rgb(197, 18, 18); color: white; width: 100px; height: 40px; font-size: 20px; border-radius: 5px; padding-left: 10px; border-style: none; margin-top: 10px; 
+        }
+        .mid{
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            margin-top: 50px;
+            line-height: 20pxpx;
+        }
+        .mid .line_p h1{
+            font-size: 60px;
+            font-weight: 30px;
+        } 
+        #email{
+            height: 50px;
+            width: 400px;
+            border: 1px solid rgb(211, 211, 211);
+            padding: 0;
+            font-size: 20px;
+        }
+        .Get{
+            padding: 0;
+            height: 55px;
+            width: 130px;
+            color: white;
+            background-color: rgb(197, 18, 18);
+            border: rgb(197, 18, 18)solid 1px;
+            font-size: 22px;
+
+        }
+        #para1{ font-size: 35px;}
+        #para2{ font-size: 27px;}
+
+
+        
+    </style>
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <section class="main">
+        <header>
+            <div class="netflix-left" >
+                <span class="iconify" data-icon="logos:netflix"></span>
+            </div>
+            
+            <div class="netflix-right">
+                <select id="language" >
+                    <option value="English"><i class="fas fa-globe"></i>English</option>
+                    <option value="Hindi">hindi</option>
+                </select>
+                <button value="Signin" id="btn" >Sign-in</button>
+            
+            </div>
+        </header>
+    </section>
+
+    <section class="mid"> 
+        <div class="line_p">
+            <p><h1><span>Unlimited movies, TV <br>shows and more.</span></h1></p>
+            <p id="para1">Watch anywhere. Cancel anytime.</p>
+            <p id="para2">Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+        <div class="link">
+            <input type="email" placeholder="Email address" id="email"> 
+            <input type="button" value="Get Started>" class="Get Started">           
+        </div>
+    </section>
+    
+</body>
+</html>
